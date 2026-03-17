@@ -14,10 +14,12 @@ import {
   FunctionSquare,
   Waves,
   Hash,
-  Infinity,
+    Infinity,
   ArrowRight,
 } from "lucide-react";
 import Image from "next/image";
+import LogoImage from "@/components/math/logo without bg.png";
+// import LogoImage from "@/components/math/logo.png";
 
 const benefits = [
   {
@@ -152,14 +154,14 @@ const BenefitsSection = () => {
         className="flex flex-col md:flex-row items-center gap-4 md:gap-6 mb-8 bg-white rounded-2xl p-4 md:p-5 shadow-sm border border-gray-100"
       >
         <div className="relative">
-          <div className="absolute inset-0 bg-gradient-to-tr from-blue-400 to-indigo-400 rounded-xl blur opacity-30"></div>
-          <div className="relative bg-gradient-to-br  rounded-xl shadow-md">
+          <div className="absolute inset-0 bg-linear-to-tr from-blue-400 to-indigo-400 rounded-xl blur opacity-30"></div>
+          <div className="relative bg-linear-to-br rounded-xl shadow-md">
             <Image
-              src={"../../public/logo.png"}
+              src={LogoImage}
               alt="AlgeNova"
-              width={48}
-              height={48}
-              className="rounded-lg brightness-0 invert"
+              width="48"
+              height="48"
+              className="rounded-lg"
             />
           </div>
         </div>
@@ -224,7 +226,7 @@ const BenefitsSection = () => {
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="bg-gradient-to-br from-gray-50 to-white rounded-xl p-4 shadow-sm border border-gray-100 mb-6"
+        className="bg-linear-to-br from-gray-50 to-white rounded-xl p-4 shadow-sm border border-gray-100 mb-6"
       >
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-2">
